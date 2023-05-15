@@ -24,6 +24,13 @@ $(function()
         if(letras.indexOf(caracter) < 0)
             return false;
     })
+    $('.txtApellido').keypress(function(e)
+    {
+        // obtener el caracter presionado por el usuario
+        let caracter = String.fromCharCode(e.which);
+        if(letras.indexOf(caracter) < 0)
+            return false;
+    })
     $('.txtEmail').keypress(function(e)
     {
         let patron = letras + numeros + '@._-';
